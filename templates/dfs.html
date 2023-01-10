@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labirinti</title>
+    <style>
+      div.cont1 {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #ccc;
+        background-image: url("static/97.-Flare.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      div.container {
+        margin: 100px;
+        border: 2px solid #ccf;
+        width: 500px;
+      }
+      div.container1 {
+        margin: 100px;
+        border: 3px solid #cbf;
+        width: 500px;
+        height: 330px;
+        background-color: rgba(180, 157, 214, 0.4);
+      }
+
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:active {
+        text-decoration: none;
+        color: black;
+      }
+      div.naslov1 {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Times New Roman";
+        color: black;
+        font-size: 30px;
+        padding: 19px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Algoritmi za rješavanje labirinta</h1></div>
+    <div class="cont1">
+      <div class="container">
+        <div class="naslov1">
+          <a class="naslov" href="/dijkstra">Dijkstra</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="naslov1">
+          <a class="naslov" href="/stvoriLabirint_">Stvori labirint</a>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="naslov1">
+          <a class="naslov" href="/dfs_alg">DFS</a>
+        </div>
+
+        <form action="/dfs_alg" method="post">
+          <label for="smjer1">smjer1:</label>
+          <input type="text" id="smjer1" name="smjer1" /><br /><br />
+
+          <label for="smjer2">smjer2:</label>
+          <input type="text" id="smjer2" name="smjer2" /><br /><br />
+
+          <label for="smjer3">smjer3:</label>
+          <input type="text" id="smjer3" name="smjer3" /><br /><br />
+
+          <label for="smjer4">smjer4:</label>
+          <input type="text" id="smjer4" name="smjer4" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
