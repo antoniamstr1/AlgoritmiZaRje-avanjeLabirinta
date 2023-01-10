@@ -1,7 +1,5 @@
 from views import views
 from flask import Flask
-import matplotlib
-matplotlib.use('Agg')
 
 
 app = Flask(__name__)

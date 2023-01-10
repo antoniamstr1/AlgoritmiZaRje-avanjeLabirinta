@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request
 from LABIRINTI.CreateLabirint import createMaze
 from LABIRINTI.DFS import DFS, pokretanje_dfs
 from LABIRINTI.pyamaze import maze, agent, COLOR
-from LABIRINTI.main2 import pokretanje_dijkstre
+from LABIRINTI.dijkstra import pokretanje_dijkstre
 
 import gc
 views = Blueprint(__name__, "views")
